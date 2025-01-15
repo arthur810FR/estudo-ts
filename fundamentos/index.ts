@@ -33,3 +33,8 @@ console.log(typeof isStudent)
 isStudent = false;
 
 console.log(isStudent)
+
+// 4 - Inferences e annotations
+
+let ann: string = "Testando";
+let inf = "Testando2"
