@@ -21,3 +21,6 @@ console.log(isStudent);
 console.log(typeof isStudent);
 isStudent = false;
 console.log(isStudent);
+// 4 - Inferences e annotations
+var ann = "Testando";
+var inf = "Testando2";
