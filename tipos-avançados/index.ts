@@ -13,3 +13,11 @@ const numeros: Array<number> = [100, 200, 300, 400]
 numeros.push(500)
 
 numeros.forEach(n => console.log(n));
+
+// 2 - parametros tipados
+
+function soma(a: number, b: number): number {
+    return a + b;
+}
+
+console.log(soma(15, 26));

@@ -7,3 +7,8 @@ console.log(nomes[1]);
 const numeros = [100, 200, 300, 400];
 numeros.push(500);
 numeros.forEach(n => console.log(n));
+// 2 - parametros tipados
+function soma(a, b) {
+    return a + b;
+}
+console.log(soma(15, 26));
