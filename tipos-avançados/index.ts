@@ -21,3 +21,12 @@ function soma(a: number, b: number): number {
 }
 
 console.log(soma(15, 26));
+
+//3 - retorno de função
+
+function greeting(name: string): string {
+    //return 5;
+    return `Hello ${name}`
+}
+
+console.log(greeting("Arthur"));
