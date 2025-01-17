@@ -7,14 +7,31 @@ console.log(nomes[1]);
 const numeros = [100, 200, 300, 400];
 numeros.push(500);
 numeros.forEach(n => console.log(n));
-// 2 - parametros tipados
+// 2 - Parametros tipados
 function soma(a, b) {
     return a + b;
 }
 console.log(soma(15, 26));
-//3 - retorno de função
+//3 - Retorno de função
 function greeting(name) {
     //return 5;
     return `Hello ${name}`;
 }
 console.log(greeting("Arthur"));
+// 4 - Tipos de objeto
+function passCoordinates(coord) {
+    console.log(`Coordenadas: x=${coord.x}, y=${coord.y}`);
+}
+const coordenadas = { x: 25, y: 32 };
+passCoordinates(coordenadas);
+// 5 - Union Types
+function showBalance(balance) {
+    console.log(`Seu saldo é: ${balance}`);
+}
+showBalance("R$ 500.00");
+showBalance(500);
+function showId(id) {
+    console.log(`O id é: ${id}`);
+}
+showId("12345");
+showId(27486);
