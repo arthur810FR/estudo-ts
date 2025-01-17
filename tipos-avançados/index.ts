@@ -85,4 +85,21 @@ printPoint(coordObj);
 
 const p = document.getElementById("some-p")
 
-console.log(p!.innerText)
+//console.log(p!.innerText)
+
+// 9 - Bigint
+
+let n: bigint
+
+n = 1000n
+
+console.log(n)
+console.log(typeof n)
+
+// 10 - symbol
+
+const symbol1:symbol = Symbol("a")
+const symbol2 = Symbol("a")
+
+console.log(symbol1 == symbol2)
+console.log(symbol1 === symbol2)
