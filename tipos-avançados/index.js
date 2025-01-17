@@ -35,3 +35,15 @@ function showId(id) {
 }
 showId("12345");
 showId(27486);
+function printPoint(point) {
+    console.log(`Ponto: x=${point.x}, y=${point.y}, z=${point.z}`);
+}
+const coordObj = {
+    x: 10,
+    y: 20,
+    z: 30
+};
+printPoint(coordObj);
+// 8 - non null assertions operators
+const p = document.getElementById("some-p");
+console.log(p.innerText);

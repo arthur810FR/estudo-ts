@@ -60,3 +60,29 @@ function showId(id: ID){
 
 showId("12345")
 showId(27486)
+
+// 7 - Interfaces
+
+interface Point {
+    x: number;
+    y: number;
+    z: number;
+}
+
+function printPoint(point: Point){
+    console.log(`Ponto: x=${point.x}, y=${point.y}, z=${point.z}`);
+}
+
+const coordObj: Point = {
+    x: 10,
+    y: 20,
+    z: 30
+}
+
+printPoint(coordObj);
+
+// 8 - non null assertions operators
+
+const p = document.getElementById("some-p")
+
+console.log(p!.innerText)
