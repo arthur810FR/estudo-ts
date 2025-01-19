@@ -63,3 +63,33 @@ function userGreeting(user: object) {
 
 userGreeting(jhon);
 userGreeting(paul);
+
+// 4 - Operador in
+
+class Dog {
+    name
+    breed
+
+    constructor(name: string, breed?: string) {
+        this.name = name;
+        if (breed) {
+            this.breed = breed;
+        }
+    }
+}
+
+const megui = new Dog("Megui", "Pincher")
+const bob = new Dog("Bob", "Poodle")
+const bell = new Dog("Bell")
+
+function showDogDetails(dog: Dog) {
+    if ('breed' in dog) {
+        console.log(`Nome: ${dog.name}, Raça: ${dog.breed}`);
+    } else {
+        console.log("O cachorro é um SRD!");
+    }
+}
+
+showDogDetails(megui);
+showDogDetails(bob)
+showDogDetails(bell)
